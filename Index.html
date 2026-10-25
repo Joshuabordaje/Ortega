@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joshua Ortega | IT Student Portfolio</title>
+  <meta name="description" content="Portfolio of Joshua Ortega, an IT student in Cebu City learning web development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <span class="brand">Joshua Ortega</span>
+    <button class="icon-btn" id="menuBtn" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <img class="avatar" src="images/profile.jpg" alt="Portrait of Joshua Ortega in a black suit and tie">
+    <p class="side-name">Joshua Ortega</p>
+    <p class="side-role">IT student, Cebu City</p>
+
+    <nav aria-label="Main">
+      <ol class="route">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <button class="btn ghost" id="themeBtn" type="button">Dark mode</button>
+  </aside>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <h1>Joshua Ortega</h1>
+      <p class="lead">I'm an IT student in Cebu City. I'm learning to build web tools that help people make clearer decisions, and I'm most interested in how technology can guide students toward the right career.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See my project</a>
+        <a class="btn ghost" href="#contact">Email me</a>
+      </div>
+      
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="two-col">
+        <div>
+          <p>I'm Joshua, a 22-year-old IT student from Cebu City. I'm building my skills through school projects, and I like turning a real problem into something people can open and use.</p>
+          <p>My most recent project is Techpath, a platform that helps aspiring IT professionals at Cebu Eastern College explore career paths and decide where to go next. It taught me that a tool is only useful if the people using it can understand its results.</p>
+        </div>
+        <dl class="facts">
+          <dt>Based in</dt><dd>Lahug, Cebu City, Philippines</dd>
+          <dt>Focus</dt><dd>Web development and decision-support tools</dd>
+          <dt>Interested in</dt><dd>Career guidance tech, clear interfaces, and tools for students</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="two-col">
+        <div class="panel now">
+          <h3>What I can do now</h3>
+          <ul>
+            <li>Structure pages with HTML5 and style them with CSS3</li>
+            <li>Build responsive layouts that work on phones and computers</li>
+            <li>Write basic JavaScript for buttons, forms, and page interactions</li>
+            <li>Work in a team on a school project</li>
+          </ul>
+        </div>
+        <div class="panel next">
+          <h3>What I'm still learning</h3>
+          <ul>
+            <li>Back-end development and databases</li>
+            <li>Building recommendation logic for a platform</li>
+            <li>Accessibility, such as color contrast and screen readers</li>
+            <li>Git and publishing sites online</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="project">
+        
+        <div class="project-body">
+          <h3>Techpath</h3>
+          <p class="subtitle">An Intelligent Platform for Career Path Discovery and Decision Support Among Aspiring Information Technology Professionals in Cebu Eastern College Incorporated.</p>
+          <p>Techpath helps IT students find career paths that fit them and supports their decision about which one to follow, so the choice is based on guidance instead of guesswork.</p>
+          <h4>My contribution</h4>
+          <p>I designed and coded the front end of the career assessment and results pages: the step-by-step questionnaire on interests, skills, strengths, and goals, the recommendation screen that explains why each IT career path was suggested, and the side-by-side career comparison view</p>
+          <h4>Built with</h4>
+          <p>HTML5, CSS3, JavaScript</p>
+          <h4>Live link</h4>
+          <p>Not available yet</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>I'm open to learning opportunities, collaboration, and feedback on my work. The best way to reach me is by email.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:Joshuabordaje6@gmail.com">Email Joshuabordaje6@gmail.com</a>
+        <button class="btn ghost" id="copyBtn" type="button">Copy email address</button>
+      </div>
+      <p class="status" id="copyStatus" role="status"></p>
+    </section>
+
+    <footer>&copy; <span id="year">2026</span> Joshua Ortega</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
